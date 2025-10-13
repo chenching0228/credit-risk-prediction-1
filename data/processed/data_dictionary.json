@@ -1,0 +1,228 @@
+{
+  "loan_amnt": {
+    "description": "listed loan amount applied for by borrower; reflects any reductions by credit department",
+    "data_type": "numeric",
+    "expected_values": "continuous (usd)"
+  },
+  "term": {
+    "description": "number of payments on the loan in months",
+    "data_type": "categorical",
+    "expected_values": [
+      "36 months",
+      "60 months"
+    ]
+  },
+  "int_rate": {
+    "description": "interest rate on the loan",
+    "data_type": "numeric",
+    "expected_values": "continuous (percentage)"
+  },
+  "installment": {
+    "description": "monthly payment owed by the borrower",
+    "data_type": "numeric",
+    "expected_values": "continuous (usd)"
+  },
+  "grade": {
+    "description": "lc assigned loan grade",
+    "data_type": "categorical",
+    "expected_values": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+    ]
+  },
+  "sub_grade": {
+    "description": "lc assigned loan subgrade",
+    "data_type": "categorical",
+    "expected_values": [
+      "a1",
+      "a2",
+      "a3",
+      "a4",
+      "a5",
+      "b1",
+      "b2",
+      "b3",
+      "b4",
+      "b5",
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "d1",
+      "d2",
+      "d3",
+      "d4",
+      "d5",
+      "e1",
+      "e2",
+      "e3",
+      "e4",
+      "e5",
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "g1",
+      "g2",
+      "g3",
+      "g4",
+      "g5"
+    ]
+  },
+  "emp_title": {
+    "description": "job title supplied by the borrower",
+    "data_type": "text",
+    "expected_values": "free text"
+  },
+  "emp_length": {
+    "description": "employment length in years (0 = < 1 year, 10 = 10+)",
+    "data_type": "categorical",
+    "expected_values": [
+      "< 1 year",
+      "1 year",
+      "2 years",
+      "3 years",
+      "4 years",
+      "5 years",
+      "6 years",
+      "7 years",
+      "8 years",
+      "9 years",
+      "10+ years"
+    ]
+  },
+  "home_ownership": {
+    "description": "home ownership status at registration or from credit report",
+    "data_type": "categorical",
+    "expected_values": [
+      "rent",
+      "own",
+      "mortgage",
+      "other"
+    ]
+  },
+  "annual_inc": {
+    "description": "self-reported annual income",
+    "data_type": "numeric",
+    "expected_values": "continuous (usd)"
+  },
+  "verification_status": {
+    "description": "income verification status by lc",
+    "data_type": "categorical",
+    "expected_values": [
+      "verified",
+      "not verified",
+      "source verified"
+    ]
+  },
+  "issue_d": {
+    "description": "month the loan was funded",
+    "data_type": "datetime",
+    "expected_values": "mmm-yyyy"
+  },
+  "loan_status": {
+    "description": "current status of the loan",
+    "data_type": "categorical",
+    "expected_values": [
+      "fully paid",
+      "charged off",
+      "current",
+      "late",
+      "default",
+      "etc."
+    ]
+  },
+  "purpose": {
+    "description": "category of loan request",
+    "data_type": "categorical",
+    "expected_values": [
+      "debt_consolidation",
+      "credit_card",
+      "home_improvement",
+      "etc."
+    ]
+  },
+  "title": {
+    "description": "loan title provided by the borrower",
+    "data_type": "text",
+    "expected_values": "free text"
+  },
+  "zip_code": {
+    "description": "first 3 digits of borrower's zip code",
+    "data_type": "categorical",
+    "expected_values": "3-digit codes"
+  },
+  "addr_state": {
+    "description": "us state abbreviation of borrower",
+    "data_type": "categorical",
+    "expected_values": "us state abbreviations"
+  },
+  "dti": {
+    "description": "debt-to-income ratio (excluding mortgage and requested lc loan)",
+    "data_type": "numeric",
+    "expected_values": "continuous (percentage)"
+  },
+  "earliest_cr_line": {
+    "description": "month of borrower's earliest reported credit line",
+    "data_type": "datetime",
+    "expected_values": "mmm-yyyy"
+  },
+  "open_acc": {
+    "description": "number of open credit lines",
+    "data_type": "numeric",
+    "expected_values": "discrete count"
+  },
+  "pub_rec": {
+    "description": "number of derogatory public records",
+    "data_type": "numeric",
+    "expected_values": "discrete count"
+  },
+  "revol_bal": {
+    "description": "total credit revolving balance",
+    "data_type": "numeric",
+    "expected_values": "continuous (usd)"
+  },
+  "revol_util": {
+    "description": "revolving line utilisation rate (used credit as percent of available)",
+    "data_type": "numeric",
+    "expected_values": "continuous (percentage)"
+  },
+  "total_acc": {
+    "description": "total number of credit lines",
+    "data_type": "numeric",
+    "expected_values": "discrete count"
+  },
+  "initial_list_status": {
+    "description": "initial listing status of the loan",
+    "data_type": "categorical",
+    "expected_values": [
+      "w",
+      "f"
+    ]
+  },
+  "application_type": {
+    "description": "individual or joint-borrower application",
+    "data_type": "categorical",
+    "expected_values": [
+      "individual",
+      "joint app"
+    ]
+  },
+  "mort_acc": {
+    "description": "number of mortgage accounts",
+    "data_type": "numeric",
+    "expected_values": "discrete count"
+  },
+  "pub_rec_bankruptcies": {
+    "description": "number of public record bankruptcies",
+    "data_type": "numeric",
+    "expected_values": "discrete count"
+  }
+}

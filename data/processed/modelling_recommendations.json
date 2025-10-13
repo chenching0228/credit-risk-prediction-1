@@ -1,0 +1,44 @@
+{
+  "recommended_models": [
+    "Logistic Regression (baseline for interpretability)",
+    "Random Forest (handles mixed feature types well)",
+    "XGBoost (strong performance on tabular data)",
+    "LightGBM (efficient for large datasets)"
+  ],
+  "key_features_identified": [
+    "int_rate_clean (strong relationship with default)",
+    "grade/sub_grade (clear risk stratification)",
+    "dti (debt burden indicator)",
+    "credit_history_years (credit maturity)",
+    "loan_to_income_ratio (ability to repay)",
+    "purpose (use case risk profiles)",
+    "emp_length_numeric (employment stability)",
+    "revol_util_clean (credit utilization)",
+    "issue_year (temporal effects)"
+  ],
+  "class_imbalance_strategy": [
+    "SMOTE for oversampling minority class",
+    "Class weights in model training",
+    "Threshold adjustment for precision-recall trade-off",
+    "Stratified sampling maintained throughout pipeline"
+  ],
+  "validation_strategy": [
+    "Time-based split: 2007-2016 for training, 2017-2018 for testing",
+    "K-fold cross-validation within training set (stratified)",
+    "Avoid random splits to prevent temporal leakage",
+    "Monitor performance across different time periods"
+  ],
+  "evaluation_metrics": [
+    "ROC-AUC (overall discriminative ability)",
+    "Precision-Recall curve (important for imbalanced data)",
+    "F1-Score (balance of precision and recall)",
+    "Confusion matrix (understand error types)",
+    "Business metrics: cost of false negatives vs false positives"
+  ],
+  "feature_engineering_suggestions": [
+    "Consider polynomial features for key numeric variables",
+    "Interaction terms (e.g., grade * dti, loan_amnt * annual_inc)",
+    "Binning continuous variables for non-linear relationships",
+    "Aggregated state-level features (regional economic indicators)"
+  ]
+}

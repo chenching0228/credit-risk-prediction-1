@@ -1,0 +1,52 @@
+{
+  "minimal_set": [
+    "int_rate_clean",
+    "grade",
+    "sub_grade"
+  ],
+  "recommended_set": [
+    "int_rate_clean",
+    "grade",
+    "sub_grade",
+    "term_months"
+  ],
+  "comprehensive_set": [
+    "int_rate_clean",
+    "grade",
+    "sub_grade",
+    "term_months"
+  ],
+  "tier1_features": [
+    "int_rate_clean",
+    "grade",
+    "sub_grade"
+  ],
+  "tier2_features": [
+    "term_months"
+  ],
+  "tier3_features": [],
+  "tier4_features": [
+    "installment",
+    "issue_year",
+    "verification_status",
+    "dti",
+    "initial_list_status",
+    "home_ownership",
+    "mort_acc",
+    "loan_amnt",
+    "loan_to_income_ratio",
+    "revol_util_clean",
+    "annual_inc",
+    "pub_rec_bankruptcies",
+    "pub_rec",
+    "purpose",
+    "credit_history_years",
+    "emp_length_numeric",
+    "open_acc",
+    "revol_bal",
+    "addr_state",
+    "total_acc",
+    "issue_month",
+    "application_type"
+  ]
+}
